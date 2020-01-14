@@ -6,6 +6,11 @@ def multi_k_means(inputs, k_list, init='k-means++'):
     init_name_str = init
     n_init = 10
     for k in k_list:
+        if init_name_str == "PCA-based":
+            run_pca_init = True
+            pca = PCA(n_components=k).fit(inputs)
+            init = pca.components_
+            n_init = 1
         centroids, estimated_labels, intertia = k_means(X=inputs, n_clusters=k, init=init,n_init=n_init)
         ret_dict[k] = estimated_labels
     return ret_dict

@@ -11,7 +11,7 @@ from sklearn.datasets import load_digits
 # Macro Values
 K_VALUES = [6,7,8,9,10,11,12]
 print_ = True
-INITS = ['k-means++', 'random']
+INITS = ['k-means++', 'random',"PCA-based"]
 
 np.random.seed(42)
 
