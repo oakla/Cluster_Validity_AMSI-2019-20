@@ -11,9 +11,9 @@ from sklearn.datasets import load_digits
 # Macro Values
 K_VALUES = [6,7,8,9,10,11,12]
 print_ = True
-INITS = ['k-means++', 'random',"PCA-based"]
+INITS = ['k-means++', 'random']
 
-np.random.seed(42)
+
 
 #load data
 X_digits, y_digits = load_digits(return_X_y=True)
@@ -34,6 +34,7 @@ if print_:
 
 init_by_k_scores = {}
 for init in INITS:
+    np.random.seed(42)
     multi_estimated_labels = multi_k_means(inputs, K_VALUES, init=init)
     init_by_k_scores[init] = multi_silhouette(inputs, multi_estimated_labels)
     if print_:
