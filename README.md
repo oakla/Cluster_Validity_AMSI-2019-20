@@ -1,5 +1,15 @@
-# Cluster_Validity_AMSI-2019
+# Playing with Unsupervised Learning Algorithms
 
-A collection of scripts and notebooks written to explore parameter selection for unsupervied learning (i.e. clustering) techniques.
+A collection of scripts and notebooks written to play with the application of unsupervised learning algorithms (i.e. clustering).
 
-This was done as part of a [summer research project](https://vrs.amsi.org.au/student-profile/alex-oakley/) funded by the Australian Mathematical Sciences Institure (AMSI).
+
+
+## DBSCAN
+### [DBSCAN applied to the iris dataset](Scripts\DBSCAN_Iris.py)
+### [DBSCAN applied to the digits dataset](Scripts\DBSCAN_digits.py)
+DBSCAN seems like an inappropriate algorithm for the digits dataset, so it seemed interesting to find out how well it performed
+
+## K-Means
+### [K-Means applied to the iris dataset](Scripts\k_means_iris_benchmark.py)
+### [K-Means applied to the iris dataset](Scripts\k_means_digits_benchmark.py)
+
