@@ -5,7 +5,7 @@ algorithms
     - dbscan
     - EM with GMM
 - benchmarking?
-    - [here](/../Jupyter Notebooks/Toolbox/clustering_tools.py)
+    - [here](/../Jupyter%20Notebooks/Toolbox/clustering_tools.py)
 
 - other
     - PCA data visualization (this is possibly not the algorithm name)
