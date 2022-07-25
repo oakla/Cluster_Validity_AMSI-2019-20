@@ -4,13 +4,30 @@ algorithms
     - kmeans
     - dbscan
     - EM with GMM
+    - HOG extraction(?)
+- parameter estimation
 - benchmarking?
-    - [here](/../Jupyter%20Notebooks/Toolbox/clustering_tools.py)
+    - [here](/../Jupyter-Notebooks/Toolbox/clustering_tools.py)
 
 - other
-    - PCA data visualization (this is possibly not the algorithm name)
+    - PCA data visualization (this is possibly not the actual algorithm name)
 
-
+## sensible organisation structures
+### by algorithm 
+- <algo name>
+    - quick example
+    - parameter estimation
+    - benchmarking (whatever the fuck that is. is that a thing?)
+#### e.g.
+- PCA
+    - what it's useful for?
+    - is there parameter estimation?
+- DBSCAN
+    - ...
+- KMeans
+    - ...
+- EM with GMM
+    - ...
 
 
 data
@@ -70,8 +87,14 @@ data
     - k-means_digits_benchmark.py
     - k-means_iris-basic.py
     - NearestNeighbourDistances.py
+    ```
+    helper function for parameter estimation
+    ```
     - Playing With GMM and EM.py
     - plot_pca_iris.py
 
     - data/
      - iris.csv
+
+     
+

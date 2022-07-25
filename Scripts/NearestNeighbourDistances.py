@@ -4,8 +4,6 @@ from sklearn.neighbors import kneighbors_graph
 from matplotlib import pyplot as plt
 
 
-
-
 def get_k_distance_plot(X: np.ndarray, k: int) -> (int, np.ndarray):
 
     # X (data), k (the number of nearest neighbours that define a datapoints label-identity)
